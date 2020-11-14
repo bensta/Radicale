@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+
+  radicale:
+    build: .
+    container_name: radicale
+    hostname: radicale
+    restart: always
+    volumes:
+     - ~/radicale/data:/var/lib/radicale
+     - ~/.config/radicale/:/etc/radicale
+    ports:
+      - "5232:5232"
