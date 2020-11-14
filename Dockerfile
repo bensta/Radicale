@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM arm32v7/python:3.8-alpine
 
 # Version of Radicale (e.g. 3.0.x)
 ARG VERSION=master
